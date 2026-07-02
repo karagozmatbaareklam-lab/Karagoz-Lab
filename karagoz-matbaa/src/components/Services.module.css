@@ -1,0 +1,120 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+.card {
+  background: var(--bg-color);
+  padding: 3rem 2rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0;
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.cardBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.04;
+  transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 0;
+  filter: grayscale(100%) brightness(1.2);
+}
+
+.card:hover .cardBg {
+  opacity: 0.12;
+  transform: scale(1.15) rotate(1deg);
+  filter: grayscale(0%) brightness(1);
+}
+
+.cardContent {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--accent-color);
+}
+
+.iconWrapper {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(248, 250, 252, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+  transition: all var(--transition-normal);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.card:hover .iconWrapper {
+  background-color: var(--accent-color);
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.cardTitle {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.5px;
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+
+.cardDesc {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.cardHoverBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--accent-color);
+  transition: width var(--transition-normal);
+  z-index: 5;
+}
+
+.card:hover .cardHoverBar {
+  width: 100%;
+}

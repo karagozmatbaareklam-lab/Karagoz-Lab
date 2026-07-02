@@ -1,0 +1,174 @@
+.contactLayout {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 8rem;
+  }
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.formGroup {
+  width: 100%;
+}
+
+.input, .textarea {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  background-color: #f8fafc;
+  border: 1px solid var(--border-color);
+  border-radius: 0;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: all var(--transition-normal);
+  letter-spacing: 0.5px;
+}
+
+.input::placeholder, .textarea::placeholder {
+  color: #94a3b8;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+}
+
+.input:focus, .textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.textarea {
+  min-height: 200px;
+  resize: vertical;
+}
+
+select.input {
+  appearance: none;
+  cursor: pointer;
+}
+
+select.input option {
+  background-color: #ffffff;
+  color: var(--text-primary);
+}
+
+.infoCol {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.iconBox {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  color: var(--accent-color);
+  border: 1px solid var(--border-color);
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all var(--transition-normal);
+}
+
+.infoItem:hover .iconBox {
+  background-color: var(--accent-color);
+  color: #000;
+  border-color: var(--accent-color);
+}
+
+.infoTitle {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.infoText {
+  color: var(--text-primary);
+  line-height: 1.6;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.mapContainer {
+  width: 100%;
+  height: 300px;
+  border-radius: 0;
+  overflow: hidden;
+  margin-top: 1rem;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.whatsappFloat {
+  position: fixed;
+  width: 65px;
+  height: 65px;
+  bottom: 40px;
+  right: 40px;
+  background-color: var(--accent-color);
+  color: #000;
+  border-radius: 0;
+  text-align: center;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-normal);
+}
+
+.whatsappFloat:hover {
+  transform: translateY(-8px);
+  background-color: var(--accent-hover);
+}
+
+.whatsappFloat svg {
+  width: 35px;
+  height: 35px;
+  fill: #000;
+}
+
+@media (max-width: 768px) {
+  .whatsappFloat {
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+  }
+}
