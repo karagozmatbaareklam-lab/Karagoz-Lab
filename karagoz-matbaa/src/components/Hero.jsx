@@ -77,7 +77,7 @@ const Hero = () => {
               </p>
               <div className={styles.buttonGroup}>
                 <a href="#contact" className="btn btn-primary">Hemen Teklif Al</a>
-                <a href="#portfolio" className="btn btn-outline" style={{ color: '#fff', borderColor: '#fff' }}>İşlerimizi İncele</a>
+                <a href="#services" className="btn btn-outline" style={{ color: '#fff', borderColor: '#fff' }}>Hizmetlerimizi İncele</a>
               </div>
             </div>
           </div>

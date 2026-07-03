@@ -1,6 +1,5 @@
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
-import Portfolio from "@/components/Portfolio";
 import References from "@/components/References";
 import Testimonials from "@/components/Testimonials";
 import InstagramFeed from "@/components/InstagramFeed";
@@ -15,10 +14,7 @@ export default function Home() {
       <ScrollReveal direction="up" delay={0.1}>
         <Services />
       </ScrollReveal>
-      
-      <ScrollReveal direction="up" delay={0.1}>
-        <Portfolio />
-      </ScrollReveal>
+
       
       <ScrollReveal direction="up" delay={0.1}>
         <References />
