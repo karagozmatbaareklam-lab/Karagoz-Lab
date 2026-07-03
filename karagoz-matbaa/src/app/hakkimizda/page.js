@@ -2,8 +2,8 @@ import About from '@/components/About';
 import ScrollReveal from '@/components/ScrollReveal';
 
 export const metadata = {
-  title: "Hakkımızda | Karagöz Matbaa & Reklam",
-  description: "15 yılı aşkın tecrübemizle matbaa ve reklam sektöründe öncü çözümler sunuyoruz.",
+  title: "Hakkımızda | Bergama Reklam Tabela, Matbaa ve Baskı Atölyesi",
+  description: "Yenilikçi makine parkurumuz ve uzman ekibimizle Bergama, Dikili, Kınık ve çevre bölgelerde matbaa, reklam tabela ve dijital baskı hizmeti sunuyoruz.",
 };
 
 export default function AboutPage() {
