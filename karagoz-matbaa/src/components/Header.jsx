@@ -98,7 +98,7 @@ const Header = () => {
                 <Store size={20} />
               </a>
             </div>
-            <Link href="/#contact" className="btn btn-primary" style={{ padding: '0.8rem 1.8rem', whiteSpace: 'nowrap', fontWeight: 500 }}>Teklif Al</Link>
+            <Link href="/#contact" className={`btn btn-primary ${styles.headerBtn}`}>Teklif Al</Link>
             <button className={styles.hamburger} onClick={toggleMenu} aria-label="Menu">
               <Menu size={28} />
             </button>

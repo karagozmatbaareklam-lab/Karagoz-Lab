@@ -89,7 +89,7 @@
 }
 
 .logoImage {
-  height: 75px;
+  height: 58px;
   width: auto;
   display: block;
   flex-shrink: 0;
@@ -97,13 +97,21 @@
 }
 
 .scrolled .logoImage {
-  height: 60px;
+  height: 48px;
 }
 
 @media (max-width: 768px) {
   .logoImage {
-    height: 65px;
+    height: 46px;
   }
+}
+
+.headerBtn {
+  padding: 0.6rem 1.4rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+  letter-spacing: 1px;
 }
 
 .nav {
@@ -218,8 +226,18 @@
     display: block;
   }
 
+  .actions {
+    gap: 1rem;
+  }
+
   .actions :global(.btn) {
-    display: none;
+    display: inline-flex;
+  }
+
+  .headerBtn {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
   }
 
   .hamburger {
