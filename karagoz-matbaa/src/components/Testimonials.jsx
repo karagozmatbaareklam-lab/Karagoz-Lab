@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 import styles from './Testimonials.module.css';
 
 const reviews = [
@@ -10,14 +10,17 @@ const reviews = [
 ];
 
 const Testimonials = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const scrollRef = useRef(null);
 
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % reviews.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + reviews.length) % reviews.length);
+  const scroll = (direction) => {
+    if (scrollRef.current) {
+      const { scrollLeft, clientWidth } = scrollRef.current;
+      const scrollAmount = clientWidth * 0.75; // Scroll 75% of visible width
+      scrollRef.current.scrollTo({
+        left: direction === 'left' ? scrollLeft - scrollAmount : scrollLeft + scrollAmount,
+        behavior: 'smooth'
+      });
+    }
   };
 
   return (
@@ -37,17 +40,17 @@ const Testimonials = () => {
             </a>
           </div>
           <div className={styles.controls}>
-            <button className={styles.controlBtn} onClick={prevSlide} aria-label="Önceki">
+            <button className={styles.controlBtn} onClick={() => scroll('left')} aria-label="Önceki">
               <svg fill="currentColor" viewBox="0 0 24 24" width="24" height="24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
             </button>
-            <button className={styles.controlBtn} onClick={nextSlide} aria-label="Sonraki">
+            <button className={styles.controlBtn} onClick={() => scroll('right')} aria-label="Sonraki">
               <svg fill="currentColor" viewBox="0 0 24 24" width="24" height="24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
             </button>
           </div>
         </div>
 
-        <div className={styles.sliderContainer}>
-          <div className={styles.sliderTrack} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+        <div className={styles.sliderContainer} ref={scrollRef}>
+          <div className={styles.sliderTrack}>
             {reviews.map((review) => (
               <div key={review.id} className={styles.slide}>
                 <div className={styles.card}>
