@@ -184,7 +184,7 @@
     transition: right var(--transition-normal);
     padding: 80px 2rem 2rem;
     overflow-y: auto;
-    z-index: 1000;
+    z-index: 1005;
   }
 
   .nav.navOpen {
