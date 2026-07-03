@@ -2,12 +2,12 @@ import React from 'react';
 import styles from './InstagramFeed.module.css';
 
 const igPosts = [
-  { id: 1, image: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&q=80&w=600', likes: 124, comments: 12 },
-  { id: 2, image: 'https://images.unsplash.com/photo-1588693834169-dcde70da0c76?auto=format&fit=crop&q=80&w=600', likes: 89, comments: 5 },
-  { id: 3, image: 'https://images.unsplash.com/photo-1541462608143-67571c6738dd?auto=format&fit=crop&q=80&w=600', likes: 256, comments: 34 },
-  { id: 4, image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=600', likes: 142, comments: 8 },
-  { id: 5, image: 'https://images.unsplash.com/photo-1563298723-dcfebaa392e3?auto=format&fit=crop&q=80&w=600', likes: 67, comments: 2 },
-  { id: 6, image: 'https://images.unsplash.com/photo-1601049676869-702ea24cfd58?auto=format&fit=crop&q=80&w=600', likes: 198, comments: 15 },
+  { id: 1, image: 'https://images.unsplash.com/photo-1572945281744-b2a1a3854b63?auto=format&fit=crop&q=80&w=600', likes: 142, comments: 8 }, // Tabela
+  { id: 2, image: 'https://images.unsplash.com/photo-1616422285623-13ff0162193c?auto=format&fit=crop&q=80&w=600', likes: 98, comments: 6 },  // Araç kaplama
+  { id: 3, image: 'https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&q=80&w=600', likes: 210, comments: 14 }, // Kartvizit/Matbaa
+  { id: 4, image: 'https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?auto=format&fit=crop&q=80&w=600', likes: 178, comments: 11 }, // Dijital baskı makinesi
+  { id: 5, image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600', likes: 115, comments: 4 },  // CNC / Atölye
+  { id: 6, image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=600', likes: 195, comments: 9 },  // Promosyon çanta/bardak
 ];
 
 const InstagramFeed = () => {
@@ -21,7 +21,7 @@ const InstagramFeed = () => {
 
         <div className={styles.grid}>
           {igPosts.map((post) => (
-            <a key={post.id} href="https://instagram.com" target="_blank" rel="noopener noreferrer" className={styles.post}>
+            <a key={post.id} href="https://www.instagram.com/karagozmatbaareklam/" target="_blank" rel="noopener noreferrer" className={styles.post}>
               <img src={post.image} alt="Instagram Post" loading="lazy" className={styles.image} />
               <div className={styles.overlay}>
                 <div className={styles.stats}>
@@ -44,7 +44,7 @@ const InstagramFeed = () => {
         </div>
         
         <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+          <a href="https://www.instagram.com/karagozmatbaareklam/" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
             <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
               <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>

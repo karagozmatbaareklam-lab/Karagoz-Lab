@@ -2,16 +2,18 @@ import React from 'react';
 import styles from './References.module.css';
 
 const references = [
-  { id: 1, name: 'Özdemir İnşaat' },
-  { id: 2, name: 'Yıldız Lojistik' },
-  { id: 3, name: 'Mega Teknoloji' },
-  { id: 4, name: 'Anadolu Grup' },
-  { id: 5, name: 'Kuzey Mimarlık' },
-  { id: 6, name: 'Ege Enerji' },
-  { id: 7, name: 'Vista Gayrimenkul' },
-  { id: 8, name: 'Pınar Otomotiv' },
-  { id: 9, name: 'Zirve Holding' },
-  { id: 10, name: 'Akasya Tekstil' },
+  { id: 1, name: 'Bergama Belediyesi' },
+  { id: 2, name: 'Bergama Ticaret Odası' },
+  { id: 3, name: 'Has Bergama Seyahat' },
+  { id: 4, name: 'Akropolis Otel & Cafe' },
+  { id: 5, name: 'Kozak Yapı İnşaat' },
+  { id: 6, name: 'Ege Eczanesi' },
+  { id: 7, name: 'BerKM Kültür Merkezi' },
+  { id: 8, name: 'Dikili Belediyesi' },
+  { id: 9, name: 'Kınık Belediyesi' },
+  { id: 10, name: 'Gözde Optik' },
+  { id: 11, name: 'Özgür Mimarlık' },
+  { id: 12, name: 'Eren Tarım' },
 ];
 
 const References = () => {
