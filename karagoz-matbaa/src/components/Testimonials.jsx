@@ -23,20 +23,25 @@ const Testimonials = () => {
     }
   };
 
+  const truncateText = (text, maxLength = 120) => {
+    if (text.length <= maxLength) return text;
+    return text.slice(0, maxLength).trim() + '...';
+  };
+
   return (
     <section className="section">
       <div className="container">
         <div className={styles.header}>
           <div>
             <h2 className="section-title" style={{ margin: 0 }}>Müşteri Deneyimleri</h2>
-            <a href="https://share.google/z3knlX50t8y03AFEh" target="_blank" rel="noopener noreferrer" className={styles.googleRating} style={{ textDecoration: 'none', cursor: 'pointer' }}>
+            <a href="https://share.google/z3knlX50t8y03AFEh" target="_blank" rel="noopener noreferrer" className={styles.googleRating}>
               <span className={styles.score}>5.0 / 5</span>
               <div className={styles.stars}>
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} fill="#fbbc05" width="20" height="20" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg key={i} fill="#fbbc05" width="18" height="18" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                 ))}
               </div>
-              <span className={styles.reviewCount} style={{ textDecoration: 'underline' }}>Google'da değerlendirmeleri gör</span>
+              <span className={styles.reviewCount}>Google Yorumları</span>
             </a>
           </div>
           <div className={styles.controls}>
@@ -68,7 +73,14 @@ const Testimonials = () => {
                       </div>
                     </div>
                   </div>
-                  <p className={styles.text}>"{review.text}"</p>
+                  <p className={styles.text}>
+                    "{truncateText(review.text)}"
+                    {review.text.length > 120 && (
+                      <a href="https://share.google/z3knlX50t8y03AFEh" target="_blank" rel="noopener noreferrer" className={styles.readMore}>
+                        Devamını Google'da Oku
+                      </a>
+                    )}
+                  </p>
                   <div className={styles.googleIcon}>
                     <svg viewBox="0 0 24 24" width="24" height="24">
                       <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />

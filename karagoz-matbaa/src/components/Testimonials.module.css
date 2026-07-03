@@ -8,30 +8,41 @@
 }
 
 .googleRating {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1.5rem;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  padding: 0.4rem 0.9rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  border-radius: 30px;
+  transition: all var(--transition-fast);
+}
+
+.googleRating:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: var(--accent-color);
 }
 
 .score {
   font-family: var(--font-heading);
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 600;
   color: var(--text-primary);
+  white-space: nowrap;
 }
 
 .stars {
   display: flex;
-  gap: 4px;
+  gap: 3px;
 }
 
 .reviewCount {
-  color: var(--text-secondary);
-  font-size: 0.85rem;
+  color: var(--accent-color);
+  font-size: 0.75rem;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 .controls {
@@ -167,6 +178,21 @@
   line-height: 1.8;
   font-weight: 400;
   font-style: italic;
+}
+
+.readMore {
+  display: inline-block;
+  margin-left: 0.5rem;
+  color: var(--accent-color);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.readMore:hover {
+  color: var(--accent-hover);
 }
 
 .googleIcon {
