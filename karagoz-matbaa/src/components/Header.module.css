@@ -92,6 +92,7 @@
   height: 75px;
   width: auto;
   display: block;
+  flex-shrink: 0;
   transition: height var(--transition-fast);
 }
 
@@ -101,7 +102,7 @@
 
 @media (max-width: 768px) {
   .logoImage {
-    height: 58px;
+    height: 65px;
   }
 }
 
