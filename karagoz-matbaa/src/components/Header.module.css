@@ -200,7 +200,7 @@
     display: block;
   }
 
-  .actions .btn {
+  .actions :global(.btn) {
     display: none;
   }
 
