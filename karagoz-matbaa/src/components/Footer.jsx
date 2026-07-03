@@ -19,7 +19,7 @@ const Footer = () => {
               hayallerinizi en yüksek kalitede gerçeğe dönüştürmek.
             </p>
             <div className={styles.social}>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+              <a href="https://www.instagram.com/karagozmatbaareklam/" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
                 <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                   <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
@@ -69,7 +69,7 @@ const Footer = () => {
               </li>
               <li className={styles.hoursRow}>
                 <span>Cumartesi:</span>
-                <span>09:00 - 15:00</span>
+                <span>08:30 - 13:00</span>
               </li>
               <li className={`${styles.hoursRow} ${styles.pazar}`}>
                 <span>Pazar:</span>

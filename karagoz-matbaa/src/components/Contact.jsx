@@ -98,7 +98,7 @@ const Contact = () => {
                 <svg fill="currentColor" viewBox="0 0 24 24" width="24" height="24"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.58l2.2-2.21c.28-.27.36-.66.25-1.01C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM19 12h2c0-4.97-4.03-9-9-9v2c3.87 0 7 3.13 7 7zm-4 0h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3z"/></svg>
               </div>
               <div>
-                <h4 className={styles.infoTitle}>Telefon</h4>
+                <h4 className={styles.infoTitle}>Arama & WhatsApp</h4>
                 <p className={styles.infoText}>0 505 996 59 17</p>
               </div>
             </div>
@@ -110,6 +110,16 @@ const Contact = () => {
               <div>
                 <h4 className={styles.infoTitle}>Atölye</h4>
                 <p className={styles.infoText}>İslamsaray Mahallesi 926. Sokak No:5<br/>Bergama / İzmir</p>
+              </div>
+            </div>
+
+            <div className={styles.infoItem}>
+              <div className={styles.iconBox}>
+                <svg fill="currentColor" viewBox="0 0 24 24" width="24" height="24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm3.3 14.3L11 11.5V6h2v4.5l3.22 1.9-1.01 1.63z"/></svg>
+              </div>
+              <div>
+                <h4 className={styles.infoTitle}>Çalışma Saatleri</h4>
+                <p className={styles.infoText}>Hafta İçi: 08:30 - 18:30<br/>Cumartesi: Saat 13:00'a Kadar</p>
               </div>
             </div>
 
