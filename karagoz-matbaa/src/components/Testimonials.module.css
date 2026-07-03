@@ -89,7 +89,9 @@
 }
 
 .card {
-  background: var(--bg-color);
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-color);
   border-radius: 0px;
   padding: 3rem 2.5rem;

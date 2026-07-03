@@ -1,13 +1,13 @@
 :root {
-  /* Color Palette - Soft & Ferah Light Theme */
-  --bg-color: #ffffff; /* pure white for maximum freshness */
-  --text-primary: #0f172a; /* Slate 900 for sharp readability */
-  --text-secondary: #475569; /* Slate 600 for soft details */
-  --accent-color: #c2a35b; /* Classic Gold - stands out premium on white */
-  --accent-hover: #a18442;
-  --card-bg: rgba(255, 255, 255, 0.7); /* Frosted Glass (White) */
-  --border-color: rgba(15, 23, 42, 0.08); /* Subtle hairline */
-  --navbar-bg: rgba(255, 255, 255, 0.9);
+  /* Color Palette - Premium Dark Theme (Karagöz Black & Gold) */
+  --bg-color: #0b0c10; /* Sleek obsidian/charcoal black */
+  --text-primary: #f8fafc; /* Crisp off-white */
+  --text-secondary: #94a3b8; /* Elegant slate gray */
+  --accent-color: #c2a35b; /* Premium Classic Gold */
+  --accent-hover: #e0be75; /* Lighter gold for hover states in dark */
+  --card-bg: rgba(26, 26, 32, 0.5); /* Frosted Glass (Dark) */
+  --border-color: rgba(255, 255, 255, 0.08); /* Subtle white hairline */
+  --navbar-bg: rgba(11, 12, 16, 0.85); /* Semi-transparent dark header */
 
   /* Typography */
   --font-heading: var(--font-montserrat), sans-serif;
@@ -22,10 +22,10 @@
   --transition-normal: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-slow: 0.8s cubic-bezier(0.16, 1, 0.3, 1);
   
-  /* Shadows - Softer for Light Theme */
-  --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 12px 40px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 24px 80px rgba(0, 0, 0, 0.12);
+  /* Shadows - Adjusted for Dark Theme */
+  --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 12px 40px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 24px 80px rgba(0, 0, 0, 0.6);
 }
 
 /* Base Styles */
@@ -145,8 +145,9 @@ img {
 
 .btn-primary {
   background-color: var(--accent-color);
-  color: #fff;
+  color: #0b0c10; /* dark text for high contrast on gold button */
   border: 1px solid var(--accent-color);
+  font-weight: 600;
 }
 
 .btn-primary:hover {
@@ -154,6 +155,7 @@ img {
   border-color: var(--accent-hover);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
+  color: #0b0c10;
 }
 
 .btn-outline {
@@ -164,5 +166,5 @@ img {
 
 .btn-outline:hover {
   background-color: var(--text-primary);
-  color: #fff;
+  color: var(--bg-color);
 }

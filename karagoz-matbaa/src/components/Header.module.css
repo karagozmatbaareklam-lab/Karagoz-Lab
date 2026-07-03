@@ -94,6 +94,7 @@
   display: block;
   flex-shrink: 0;
   transition: height var(--transition-fast);
+  filter: invert(1);
 }
 
 .scrolled .logoImage {
