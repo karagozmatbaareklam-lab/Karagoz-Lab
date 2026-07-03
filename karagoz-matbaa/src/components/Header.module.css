@@ -199,6 +199,10 @@
     display: none;
   }
 
+  .headerContainer {
+    padding: 0 1rem !important;
+  }
+
   .nav {
     position: fixed;
     top: 0;
@@ -235,9 +239,9 @@
   }
 
   .headerBtn {
-    padding: 0.5rem 0.9rem;
-    font-size: 0.75rem;
-    letter-spacing: 0.5px;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.3px;
   }
 
   .hamburger {
