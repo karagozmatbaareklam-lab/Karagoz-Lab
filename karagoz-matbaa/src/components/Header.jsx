@@ -70,8 +70,7 @@ const Header = () => {
         <div className={`container ${styles.headerContainer}`}>
           <div className={styles.logo}>
             <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
-              <span className={styles.brandName}>KARAGÖZ</span>
-              <span className={styles.brandSuffix}>Matbaa & Reklam</span>
+              <img src="/images/logo.png" alt="Karagöz Matbaa & Reklam Logo" className={styles.logoImage} />
             </Link>
           </div>
 

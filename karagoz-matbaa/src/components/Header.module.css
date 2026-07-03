@@ -88,6 +88,23 @@
   text-transform: uppercase;
 }
 
+.logoImage {
+  height: 50px;
+  width: auto;
+  display: block;
+  transition: height var(--transition-fast);
+}
+
+.scrolled .logoImage {
+  height: 42px;
+}
+
+@media (max-width: 768px) {
+  .logoImage {
+    height: 42px;
+  }
+}
+
 .nav {
   display: flex;
   align-items: center;
