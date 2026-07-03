@@ -89,19 +89,19 @@
 }
 
 .logoImage {
-  height: 50px;
+  height: 65px;
   width: auto;
   display: block;
   transition: height var(--transition-fast);
 }
 
 .scrolled .logoImage {
-  height: 42px;
+  height: 52px;
 }
 
 @media (max-width: 768px) {
   .logoImage {
-    height: 42px;
+    height: 50px;
   }
 }
 
