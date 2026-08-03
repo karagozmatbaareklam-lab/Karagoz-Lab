@@ -1,0 +1,16 @@
+KARAGOZ MATBAA & REKLAM - GITHUB GUNCELLEME PAKETI
+
+Bu paket karagozmatbaareklam-lab/karagoz-matbaa deposu icindir.
+DNS, nameserver veya Vercel domain ayarlarina dokunmayin.
+
+1. Bu ZIP dosyasini bilgisayarinizda cikartin.
+2. GitHub'da karagozmatbaareklam-lab/karagoz-matbaa deposunu acin.
+3. Code > Add file > Upload files secenegine girin.
+4. ZIP dosyasini yuklemeyin. ZIP'ten cikan DOSYA VE KLASORLERIN TAMAMINI surukleyip birakin.
+5. Dosyalarin main dalina yuklendigini kontrol edin.
+6. Commit message alanina: Yeni kurumsal site temasini yayinla
+7. Commit changes butonuna basin.
+8. Vercel otomatik olarak yeni deployment baslatacaktir.
+
+Not: public, src ve bunlarin alt klasor yapisi kesinlikle korunmalidir.
+Hazir surum commit kimligi: 7879801
