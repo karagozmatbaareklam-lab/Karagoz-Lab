@@ -1,0 +1,9 @@
+{
+  "name": "Karagöz Matbaa & Reklam",
+  "short_name": "Karagöz",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#08233f",
+  "icons": []
+}
