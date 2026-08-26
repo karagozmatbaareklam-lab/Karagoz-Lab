@@ -8,8 +8,12 @@ export const metadata: Metadata = {
     "codex-preview": "development",
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.png", type: "image/png" }
+    ],
     shortcut: "/favicon.svg",
+    apple: "/apple-touch-icon.png",
   },
 };
 
