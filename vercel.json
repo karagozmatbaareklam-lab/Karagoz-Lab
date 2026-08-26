@@ -1,6 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/", "destination": "/approved-site.html" },
-    { "source": "/yasal/kvkk", "destination": "/yasal/kvkk/index.html" }
-  ]
-}
